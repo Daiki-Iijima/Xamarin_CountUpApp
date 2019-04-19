@@ -134,4 +134,7 @@
       <Name>CountUpApp</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\AddIcon.png" />
+  </ItemGroup>
 </Project>

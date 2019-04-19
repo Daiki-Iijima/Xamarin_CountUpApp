@@ -22,17 +22,32 @@ namespace CountUpApp
         }
 
         /// <summary>
-        /// ボタンクリックイベント
+        /// Addボタンクリックイベント
         /// </summary>
         /// <param name="sender">Sender.</param>
         /// <param name="e">E.</param>
-        void Handle_Clicked(object sender, System.EventArgs e)
+        void OnAddClicked(object sender, System.EventArgs e)
         {
             //カウントアップ 
             count++;
 
             //ラベルに出力
             StateLabel.Text = count + " 回押されたよ";
+
+        }
+
+        /// <summary>
+        /// リセットボタンクリックイベント
+        /// </summary>
+        /// <param name="sender">Sender.</param>
+        /// <param name="e">E.</param>
+        void OnResetClicked(object sender, System.EventArgs e)
+        {
+            //カウントリセット
+            count = 0;
+
+            //ラベルに出力
+            StateLabel.Text = "カウントリセット";
 
         }
     }
