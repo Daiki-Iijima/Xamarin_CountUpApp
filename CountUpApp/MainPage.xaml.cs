@@ -49,6 +49,9 @@ namespace CountUpApp
             //ラベルに出力
             StateLabel.Text = "カウントリセット";
 
+            // 遷移先の画面としてPage2.xamlが作ってある場合
+            Application.Current.MainPage = new Page2();
+
         }
     }
 }
